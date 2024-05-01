@@ -1,3 +1,5 @@
+# WORK IN PROGRESS
+ 
  # ExploreEase
 ExploreEase is a web application that aggregates travel offers from various websites including MakeMyTrip, Yatra, Goibibo, and others using web scraping techniques.
 Utilized MongoDB for database management, Express.js for the backend, React.js for the frontend, and Node.js for server-side scripting to provide users with a seamless platform for finding the best travel deals.
