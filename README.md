@@ -1,5 +1,6 @@
  # ExploreEase
- 
+ExploreEase is a web application that aggregates travel offers from various websites including MakeMyTrip, Yatra, Goibibo, and others using web scraping techniques.
+Utilized MongoDB for database management, Express.js for the backend, React.js for the frontend, and Node.js for server-side scripting to provide users with a seamless platform for finding the best travel deals.
 
 ## Features
 
@@ -20,7 +21,7 @@
 
 ## Setup Instructions
 1. Clone the repository:
-   git clone https://github.com/Prinkal1/mess_repo1.git
+   git clone https://github.com/Prinkal1/ExploreEase
 
 2. Install all dependencies written in req.txt file
 
