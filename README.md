@@ -21,7 +21,7 @@ Utilized MongoDB for database management, Express.js for the backend, React.js f
 
 ## Setup Instructions
 1. Clone the repository:
-   git clone https://github.com/Prinkal1/ExploreEase
+   git clone https://github.com/Prinkal1/ExploreEase.git
 
 2. Install all dependencies written in req.txt file
 
