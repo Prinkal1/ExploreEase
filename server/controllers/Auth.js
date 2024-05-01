@@ -18,7 +18,6 @@ exports.signup = async (req, res) => {
 			email,
 			password,
 			confirmPassword,
-			messacc,
 			accountType,
 			contactNumber,
 			otp,
@@ -29,7 +28,6 @@ exports.signup = async (req, res) => {
 			!lastName ||
 			!email ||
 			!password ||
-			!messacc ||
 			!confirmPassword ||
 			!otp
 		) {
@@ -204,6 +202,17 @@ exports.sendotp = async (req, res) => {
 		}
 		const otpPayload = { email, otp };
 		const otpBody = await OTP.create(otpPayload);
+		try {
+			const mailResponse = await mailSender(
+				email,
+				"Verification Email",
+				emailTemplate(otp)
+			);
+			console.log("Email sent successfully: ", mailResponse.response);
+		} catch (error) {
+			console.log("Error occurred while sending email: ", error);
+			throw error;
+		}
 		console.log("OTP Body", otpBody);
 		res.status(200).json({
 			success: true,
